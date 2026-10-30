@@ -515,3 +515,26 @@ a.chip[href]:hover { border-color: var(--accent); }
   html { scroll-behavior: auto; }
   * { transition: none !important; animation: none !important; }
 }
+
+/* ---------- projects with videos ---------- */
+.project { display: flex; flex-direction: column; gap: 0.9rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); min-width: 0; }
+.project h3 { margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 600; letter-spacing: -0.01em; }
+.project .card-links { margin: 0; color: var(--ink-2); font-size: 0.92rem; }
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 0.6rem 0 0.4rem; padding: 0; list-style: none; }
+.pillars li { min-width: 0; padding: 0.9rem 1rem 1rem; border-top: 2px solid var(--accent); background: var(--band); border-radius: 0 0 var(--radius) var(--radius); }
+.pillars h4 { margin: 0 0 0.35rem; color: var(--ink); font-size: 1.05rem; font-weight: 600; }
+.pillars p { margin: 0; color: var(--ink-2); font-size: 0.95rem; line-height: 1.5; }
+.vids { display: grid; gap: 1.25rem; margin: 0.4rem 0; }
+.vids.v2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.vids.one { grid-template-columns: minmax(0, 1fr); }
+.vids.one.tall { max-width: 24rem; }
+.vids.tall { align-items: start; }
+.vid { min-width: 0; margin: 0; }
+.vid video { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: var(--ar, 16/9); background: #000; border-radius: var(--radius); border: 1px solid var(--rule); }
+.vid figcaption { padding-top: 0.5rem; color: var(--ink-2); font-size: 0.92rem; line-height: 1.4; }
+@media (max-width: 700px) {
+  .pillars { grid-template-columns: minmax(0, 1fr); }
+  .vids.v2 { grid-template-columns: minmax(0, 1fr); }
+  .vids.v2.tall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+}
+.vids.v2.tall { max-width: 34rem; }

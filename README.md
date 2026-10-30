@@ -9,7 +9,7 @@ Il sito è in inglese, queste istruzioni in italiano. Puoi cancellare questo fil
 |---|---|
 | `index.html` | La pagina intera: testi, pubblicazioni, news, ecc. |
 | `assets/css/style.css` | Colori, caratteri e layout (tema chiaro e scuro) |
-| `assets/js/main.js` | Menu da telefono, tema scuro, galleria, email |
+| `assets/js/main.js` | Menu da telefono, tema scuro, email |
 | `assets/Alessandro_Perini_CV.pdf` | Il CV scaricabile dal pulsante "Download CV" |
 | `assets/img/` | Qui vanno la foto profilo e le foto della galleria |
 | `.nojekyll` | Dice a GitHub di pubblicare i file così come sono |
@@ -34,8 +34,7 @@ Un link senza `href` appare grigio e non cliccabile. Quando lo aggiungi diventa 
 
 **Foto profilo.** Salva un file `profile.jpg` in `assets/img/` (formato verticale 4:5, circa 800 px di larghezza). Appare da solo al posto delle iniziali "AP".
 
-**Galleria.** Salva `gallery-01.jpg` … `gallery-04.jpg` in `assets/img/` (formato orizzontale 3:2, circa 1600 px). Finché una foto non c'è, la casella mostra un disegno del progetto. Le didascalie sono nel file `index.html`, nella sezione `id="gallery"`.
-Per un video, metti un MP4 (H.264) breve in `assets/video/` e copia la casella di esempio che trovi nel commento dentro la sezione galleria.
+**Video.** I video dei progetti sono in `assets/video/` (MP4 H.264 e una locandina `.jpg` con lo stesso nome). Compaiono nelle sezioni TEXO, differential gearbox e KNEXO dentro `index.html` (cerca `class="vid"`). Per sostituirne uno, carica un file con lo stesso nome.
 
 Tieni ogni immagine sotto circa 500 KB (JPEG, qualità 80) così la pagina resta veloce.
 
