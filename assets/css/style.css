@@ -225,7 +225,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 17.5rem;
+  grid-template-columns: minmax(0, 1fr) 25rem;
   gap: clamp(1.5rem, 5vw, 4rem);
   align-items: start;
 }
@@ -306,7 +306,7 @@ a.chip[href]:hover { border-color: var(--accent); }
 
 @media (max-width: 760px) {
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
-  .portrait { order: -1; width: 8.5rem; }
+  .portrait { order: -1; width: min(100%, 17rem); }
 }
 
 /* ---------- band rows (the CV pattern) ---------- */
