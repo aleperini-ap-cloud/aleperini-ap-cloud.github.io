@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aleperini-ap-cloud.github.io/sitemap.xml
