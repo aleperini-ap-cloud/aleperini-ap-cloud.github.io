@@ -559,3 +559,6 @@ a:hover { color: var(--orange); }
 .facts b { color: var(--accent); font-size: 1.7rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.15; }
 .facts span { color: var(--ink-2); font-size: 0.92rem; }
 @media (max-width: 700px) { .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.fig.photo { padding: 0; background: none; }
+.fig.photo img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--rule); }
+.fig.photo figcaption { margin-top: 0.5rem; }
