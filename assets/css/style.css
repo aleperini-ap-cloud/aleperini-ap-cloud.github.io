@@ -538,3 +538,4 @@ a.chip[href]:hover { border-color: var(--accent); }
   .vids.v2.tall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
 }
 .vids.v2.tall { max-width: 34rem; }
+.vids.one.sup { max-width: 44rem; }
