@@ -174,12 +174,13 @@
     <article class="project" id="r-knexo">
       <p class="card-kind">Lower-limb exoskeleton</p>
       <h3>KNEXO</h3>
-      <p class="lead">A lower-limb exoskeleton for knee extension. It was developed during a 2026 visit at the ARIES lab (MIRMI, Technical University of Munich), together with work on barometric fusion for continuous variable assistance in a soft knee exoskeleton and on muscle activation detection from surface electromyography.</p>
+      <p class="lead">A lightweight (&lt;1.5&nbsp;kg), back-worn soft knee exoskeleton for continuous, terrain-adaptive assistance, developed during a 2026 visit at the ARIES lab (MIRMI, Technical University of Munich).</p>
+      <p>KNEXO uses a physics-based control strategy built on direct barometric measurements, with no terrain classification and no data-driven training. A fuzzy-inspired controller fuses kinematic cues from IMUs with altitude: since the barometer measures altitude change directly, the response follows from the physics of the task at a fraction of the computational cost. An indoor study with eight subjects showed a 5.6% reduction in metabolic cost of transport on stairs compared with the exoskeleton off, and an outdoor study with four participants confirmed continuous variable assistance across walking speeds.</p>
       <div class="vids one">
         <figure class="vid" style="--ar:1280/720"><video controls playsinline preload="none" poster="assets/video/knexo_demo.jpg" aria-label="KNEXO demonstration"><source src="assets/video/knexo_demo.mp4" type="video/mp4"></video><figcaption>KNEXO, knee extension assistance.</figcaption></figure>
       </div>
-      <ul class="tags"><li>Knee extension</li><li>Barometric sensing</li><li>EMG</li></ul>
-      <p class="card-links">Related: <a href="#pub-ral26">IEEE RA-L (in preparation)</a> · <a href="#pub-ijars26">IJARS 2026</a></p>
+      <ul class="tags"><li>Knee extension</li><li>Barometric sensing</li><li>Terrain-adaptive control</li></ul>
+      <p class="card-links">Related: <a href="#pub-ral26">IEEE RA-L (in preparation)</a></p>
     </article>
   </div>
 </section>
