@@ -1,60 +1,59 @@
-/* Layout concept: the CV, set for the screen, dressed like a private library.
-   A narrow band carries dates and labels on the left, content sits to its right
-   in one reading column, and a portrait stands beside the opening bio.
-   Ivory paper, bottle green ink, brass hairlines. Garamond for display. */
+/* Layout concept: the CV, set for the screen. A narrow band carries dates and
+   labels on the left, content sits to its right in one reading column, and a
+   portrait stands beside the opening bio. White paper, navy ink, one typeface. */
 
 :root {
-  --bg: #f7f3ea;
-  --band: #ece5d4;
-  --ink: #1d2a24;
-  --ink-2: #566052;
-  --rule: #d9cfb6;
-  --accent: #1e3d2f;
-  --accent-ink: #f7f3ea;
-  --gold: #9a7a36;
-  --chip: #e5dcc6;
+  --bg: #ffffff;
+  --band: #eef2f8;
+  --ink: #0f1b33;
+  --ink-2: #4a5a73;
+  --rule: #d6deea;
+  --accent: #17356b;
+  --accent-ink: #ffffff;
+  --hair: #5b7db1;
+  --chip: #e3eaf5;
   --ok: #2b7a57;
   --warn: #946414;
-  --focus: #7a5c1e;
-  --font-display: "Cormorant Garamond", "EB Garamond", Garamond, "Times New Roman", serif;
-  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
-  --font-ui: "Source Sans 3", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  --radius: 2px;
+  --focus: #1f6feb;
+  --font-display: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-display);
+  --font-ui: var(--font-display);
+  --radius: 3px;
   --key: 10rem;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1914;
-    --band: #17251d;
-    --ink: #ece6d6;
-    --ink-2: #aab5a4;
-    --rule: #2b3b31;
-    --accent: #d2b678;
-    --accent-ink: #0f1914;
-    --gold: #b89a58;
-    --chip: #1e2e24;
+    --bg: #0b1220;
+    --band: #121c30;
+    --ink: #e6ecf5;
+    --ink-2: #9fb0c8;
+    --rule: #22304a;
+    --accent: #8fb2ea;
+    --accent-ink: #0b1220;
+    --hair: #4f74b0;
+    --chip: #18243b;
     --ok: #5dbb92;
     --warn: #d9a54a;
-    --focus: #e3c887;
+    --focus: #7fb0ff;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #0f1914;
-  --band: #17251d;
-  --ink: #ece6d6;
-  --ink-2: #aab5a4;
-  --rule: #2b3b31;
-  --accent: #d2b678;
-  --accent-ink: #0f1914;
-  --gold: #b89a58;
-  --chip: #1e2e24;
+  --bg: #0b1220;
+  --band: #121c30;
+  --ink: #e6ecf5;
+  --ink-2: #9fb0c8;
+  --rule: #22304a;
+  --accent: #8fb2ea;
+  --accent-ink: #0b1220;
+  --hair: #4f74b0;
+  --chip: #18243b;
   --ok: #5dbb92;
   --warn: #d9a54a;
-  --focus: #e3c887;
+  --focus: #7fb0ff;
   color-scheme: dark;
 }
 
@@ -489,37 +488,26 @@ a.chip[href]:hover { border-color: var(--accent); }
 .foot p { margin: 0; }
 
 
-/* ---------- old-money refinement ---------- */
+/* ---------- professional refinement ---------- */
 
-.nav a, .row-k, .chip, .btn, .tags li, .card-kind, .kind, .yr, .copy, .icon-btn,
-.foot, .shot figcaption, .fig figcaption, .fig .lbl, .skip, .lightbox figcaption { font-family: var(--font-ui); }
+.brand { font-size: 1.15rem; font-weight: 600; letter-spacing: 0; }
+.nav a { font-size: 0.93rem; font-weight: 500; }
+.bar { border-bottom-color: var(--rule); }
 
-.brand { font-family: var(--font-display); font-size: 1.45rem; font-weight: 600; letter-spacing: 0.01em; }
-.nav a { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; }
-.js .nav a { font-size: 0.9rem; }
-.bar { border-bottom-color: var(--gold); }
+.hero h1 { font-weight: 600; letter-spacing: -0.025em; font-size: clamp(2.6rem, 7.5vw, 4.4rem); }
+.role { margin-bottom: 1.6rem; font-style: normal; font-size: 1.2rem; }
+.portrait-mono { font-weight: 300; opacity: 0.5; }
 
-.hero h1 { font-weight: 500; letter-spacing: -0.005em; font-size: clamp(3rem, 9vw, 5.4rem); }
-.role { position: relative; margin-bottom: 2.1rem; font-size: 1.22rem; }
-.role::after { content: ""; position: absolute; left: 0; bottom: -1rem; width: 3.5rem; height: 1px; background: var(--gold); }
-.portrait-frame { outline: 1px solid var(--gold); outline-offset: 6px; }
-.portrait-mono { font-family: var(--font-display); font-weight: 500; opacity: 0.6; }
+.sec h2 { margin-bottom: 1.6rem; font-size: clamp(1.75rem, 3.6vw, 2.2rem); font-weight: 600; letter-spacing: -0.015em; }
+.sec h2::after { content: ""; display: block; width: 2.5rem; height: 3px; margin-top: 0.65rem; border-radius: 2px; background: var(--hair); }
+.sec h3.group { margin: 2.25rem 0 0.75rem; color: var(--ink-2); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.lead { font-size: 1.2rem; }
 
-.sec h2 { margin-bottom: 1.9rem; font-size: clamp(2rem, 4.4vw, 2.75rem); font-weight: 600; letter-spacing: 0.005em; }
-.sec h2::after { content: ""; display: block; width: 3rem; height: 1px; margin-top: 0.7rem; background: var(--gold); }
-.sec h3.group { margin: 2.5rem 0 0.8rem; color: var(--ink-2); font-family: var(--font-ui); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
-.lead { font-size: 1.22rem; }
-
-.card h3 { font-family: var(--font-display); font-size: 1.65rem; font-weight: 700; line-height: 1.1; }
-.card-kind { letter-spacing: 0.12em; }
-
-.btn { font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.7rem 1.25rem; }
-.btn .tag { letter-spacing: 0.08em; }
-.row-k { font-size: 0.88rem; letter-spacing: 0.03em; }
-.chip { font-size: 0.9rem; }
-
-.pub-title { font-size: 1.04rem; }
-.foot { border-top-color: var(--gold); }
+.card h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+.card-kind { letter-spacing: 0.1em; }
+.btn { padding: 0.65rem 1.1rem; font-weight: 600; }
+.row-k { font-size: 0.9rem; }
+.pub-title { font-weight: 600; }
 
 /* @@NEXT@@ */
 
