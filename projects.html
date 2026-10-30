@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects | Alessandro Perini</title>
+<meta name="description" content="Research projects of Alessandro Perini with demonstration videos: TEXO textile hand exoskeleton, differential actuation for underactuated hands, KNEXO knee exoskeleton.">
+<meta name="author" content="Alessandro Perini">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Alessandro Perini">
+<meta property="og:description" content="PhD student in Industrial Engineering, University of Rome Tor Vergata. Wearable robotics, textile exoskeletons, tendon-driven actuation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2317356b'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EAP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" id="top">
+  <div class="bar-in">
+    <a class="brand" href="index.html">Alessandro Perini</a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research">Research</a>
+      <a href="projects.html" aria-current="true">Projects</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#background">Background</a>
+      <a href="index.html#honors">Honors</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="bar-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="sec pagehead">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">&larr; Back to the main page</a></p>
+    <h1 class="page-title">Projects</h1>
+    <p class="lead">Demonstration videos and details of the main research projects.</p>
+    <article class="project" id="r-texo">
+      <p class="card-kind">Textile hand exoskeleton</p>
+      <h3>TEXO</h3>
+      <p class="lead">A lightweight, accessible glove exoskeleton, fully made of sustainable textiles. It is tendon-driven, and its parametric patterns allow each glove to be tailored to the user.</p>
+      <ul class="pillars">
+        <li><h4>Parametric</h4><p>The glove is generated from a small set of parameters, so the pattern is a function of the design, not a fixed drawing.</p></li>
+        <li><h4>Tailored</h4><p>Each glove is fitted to the hand of its user by changing the parameters, with no need for a stock of sizes.</p></li>
+        <li><h4>Open access</h4><p>The design is meant to be easy to reproduce, made of low-cost sustainable textiles and accessible fabrication tools.</p></li>
+      </ul>
+      <div class="vids v2">
+        <figure class="vid" style="--ar:1290/720"><video controls playsinline preload="none" poster="assets/video/texo_demo.jpg" aria-label="TEXO demonstration"><source src="assets/video/texo_demo.mp4" type="video/mp4"></video><figcaption>TEXO in use.</figcaption></figure>
+        <figure class="vid" style="--ar:1290/720"><video controls playsinline preload="none" poster="assets/video/tailored_fabrication.jpg" aria-label="Tailored fabrication of TEXO"><source src="assets/video/tailored_fabrication.mp4" type="video/mp4"></video><figcaption>Tailored fabrication: from the parameters to the glove.</figcaption></figure>
+      </div>
+      <div class="vids v2 tall">
+        <figure class="vid" style="--ar:544/960"><video controls playsinline preload="none" poster="assets/video/grasp_demo.jpg" aria-label="Grasp demonstration"><source src="assets/video/grasp_demo.mp4" type="video/mp4"></video><figcaption>Grasp.</figcaption></figure>
+        <figure class="vid" style="--ar:616/960"><video controls playsinline preload="none" poster="assets/video/pinch_demo.jpg" aria-label="Force transmission in a pinch"><source src="assets/video/pinch_demo.mp4" type="video/mp4"></video><figcaption>Pinch: force transmission.</figcaption></figure>
+      </div>
+      <div class="vids one sup">
+        <figure class="vid" style="--ar:1290/720"><video controls playsinline preload="none" poster="assets/video/texo_in_test.jpg" aria-label="TEXO in test, supplementary video"><source src="assets/video/texo_in_test.mp4" type="video/mp4"></video><figcaption>Supplementary video: TEXO in test.</figcaption></figure>
+      </div>
+      <ul class="tags"><li>Textiles</li><li>Tendon-driven</li><li>Parametric design</li><li>Open access</li></ul>
+      <p class="card-links">Related: <a href="#pub-tro26">IEEE T-RO paper (under review)</a> · <a href="#honors">Italian patent application</a></p>
+    </article>
+
+    <article class="project" id="r-underactuation">
+      <p class="card-kind">Tendon-driven actuation</p>
+      <h3>Underactuated hand exoskeletons</h3>
+      <p class="lead">Adaptive tendon-driven hand exoskeletons for stroke rehabilitation, from the MSc thesis to the study of underactuation, including the design of a single-input, five-output differential actuation unit for underactuated hands.</p>
+      <div class="vids one tall">
+        <figure class="vid" style="--ar:792/960"><video controls playsinline preload="none" poster="assets/video/differential_gearbox.jpg" aria-label="Differential gearbox"><source src="assets/video/differential_gearbox.mp4" type="video/mp4"></video><figcaption>The differential gearbox: one input, five outputs.</figcaption></figure>
+      </div>
+      <div class="vids one sup">
+        <figure class="vid" style="--ar:1426/720"><video controls playsinline preload="none" poster="assets/video/differential_output_balance.jpg" aria-label="Differential output balance, supplementary video"><source src="assets/video/differential_output_balance.mp4" type="video/mp4"></video><figcaption>Supplementary video: output balance of the differential unit.</figcaption></figure>
+      </div>
+      <ul class="tags"><li>Stroke rehabilitation</li><li>Underactuation</li><li>Differential actuation</li></ul>
+      <p class="card-links">Related: <a href="#pub-robosoft25">RoboSoft 2025</a> · <a href="#pub-springer26">Springer chapter 2026</a> · <a href="#pub-icra26">ICRA 2026</a></p>
+    </article>
+
+    <article class="project" id="r-benchmark">
+      <p class="card-kind">Benchmarking</p>
+      <h3>Open benchmark for soft hand exoskeletons</h3>
+      <p class="lead">Reproducible metrics and an open benchmark for the grasping characterization of soft hand exoskeletons.</p>
+      <ul class="tags"><li>Grasp characterization</li><li>Reproducibility</li><li>Metrics</li></ul>
+      <p class="card-links">Related: <a href="#pub-ais26">Advanced Intelligent Systems (under review)</a></p>
+    </article>
+
+    <article class="project" id="r-knexo">
+      <p class="card-kind">Lower-limb exoskeleton</p>
+      <h3>KNEXO</h3>
+      <p class="lead">A lightweight (&lt;1.5&nbsp;kg), back-worn soft knee exoskeleton for continuous, terrain-adaptive assistance, developed during a 2026 visit at the ARIES lab (MIRMI, Technical University of Munich).</p>
+      <p>KNEXO uses a physics-based control strategy built on direct barometric measurements, with no terrain classification and no data-driven training. A fuzzy-inspired controller fuses kinematic cues from IMUs with altitude: since the barometer measures altitude change directly, the response follows from the physics of the task at a fraction of the computational cost. An indoor study with eight subjects showed a 5.6% reduction in metabolic cost of transport on stairs compared with the exoskeleton off, and an outdoor study with four participants confirmed continuous variable assistance across walking speeds.</p>
+      <div class="vids one">
+        <figure class="vid" style="--ar:1280/720"><video controls playsinline preload="none" poster="assets/video/knexo_demo.jpg" aria-label="KNEXO demonstration"><source src="assets/video/knexo_demo.mp4" type="video/mp4"></video><figcaption>KNEXO, knee extension assistance.</figcaption></figure>
+      </div>
+      <ul class="tags"><li>Knee extension</li><li>Barometric sensing</li><li>Terrain-adaptive control</li></ul>
+      <p class="card-links">Related: <a href="#pub-ral26">IEEE RA-L (in preparation)</a></p>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© 2026 Alessandro Perini. Last updated October 2026.</p>
+    <p><a href="#main">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -539,3 +539,8 @@ a.chip[href]:hover { border-color: var(--accent); }
 }
 .vids.v2.tall { max-width: 34rem; }
 .vids.one.sup { max-width: 44rem; }
+.project.brief { margin-top: 2rem; padding-top: 1.5rem; }
+.project .more { margin: 0; font-weight: 500; }
+.pagehead .page-title { margin: 0.4rem 0 0.6rem; color: var(--accent); font-size: 2.2rem; font-weight: 600; letter-spacing: -0.015em; }
+.pagehead .crumb { margin: 0; font-size: 0.95rem; }
+.pagehead { padding-top: 3.5rem; }
